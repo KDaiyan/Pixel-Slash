@@ -27,7 +27,6 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(SFML nlohmann_json)
 
 if(NOT DEFINED ENV{CLION_IDE})
-    # Not running in CLion
     if(MINGW)
         set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static -static-libgcc -static-libstdc++")
     elseif(MSVC)
