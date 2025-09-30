@@ -19,8 +19,13 @@ The objective of the game is to collect all the coins and slay all the mobs. The
 - Run `installer_win.bat`
 - Run `run.bat`
 
+## Controls
+- W, A, S, D are used for movement
+- Space is jump
+- M is attack
+
 ## Disclaimer
-I do not claim ownership of any of the assets used in this project. They belong to their rightful owners.
+I do not claim ownership of the assets used in this project. They belong to their rightful owners.
 
 ## License
 This program is free to use under the MIT License and can be used, modified, and redistributed without permission.
