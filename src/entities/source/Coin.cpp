@@ -19,7 +19,7 @@ Coin::Coin(const sf::Vector2f& position, EventManager& eventManager)
 }
 
 void Coin::draw(sf::RenderTarget &target, sf::RenderStates states) const {
-    auto& window = Renderer::instance().get_window();
+    auto& window = Renderer::get_window();
     window.draw(*m_sprite);
 }
 

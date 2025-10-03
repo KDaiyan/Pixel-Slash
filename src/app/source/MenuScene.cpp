@@ -71,6 +71,6 @@ void MenuScene::on_click_play(const MousePressEvent&) {
 }
 
 void MenuScene::on_click_exit(const MousePressEvent&) {
-    auto& window = Renderer::instance().get_window();
+    auto& window = Renderer::get_window();
     window.close();
 }

@@ -40,7 +40,7 @@ bool Pillar::does_collide(const sf::FloatRect& rect) {
 }
 
 void Pillar::draw(sf::RenderTarget &target, const sf::RenderStates states) const {
-    auto& window = Renderer::instance().get_window();
+    auto& window = Renderer::get_window();
     window.draw(*m_pillarSprite);
     window.draw(*m_headSprite);
 }

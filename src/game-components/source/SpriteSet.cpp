@@ -66,7 +66,7 @@ void SpriteSet::update(EntityState& state, const Direction direction, const sf::
 }
 
 void SpriteSet::draw(sf::RenderTarget &target, sf::RenderStates states) const {
-    auto& window = Renderer::instance().get_window();
+    auto& window = Renderer::get_window();
 
     sf::Sprite spriteToDraw = *m_targetSprite;
     spriteToDraw.setPosition(spriteToDraw.getPosition() + Constants::spriteOffset);

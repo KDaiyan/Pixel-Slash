@@ -12,6 +12,6 @@ Particle::Particle(const sf::Vector2f& size, const sf::Vector2f& position, const
 }
 
 void Particle::draw(sf::RenderTarget& target, sf::RenderStates states) const {
-    auto& window = Renderer::instance().get_window();
+    auto& window = Renderer::get_window();
     window.draw(m_shape);
 }

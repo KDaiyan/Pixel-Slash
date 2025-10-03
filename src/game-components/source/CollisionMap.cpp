@@ -53,7 +53,7 @@ bool CollisionMap::does_collide(const sf::FloatRect &rect) {
 }
 
 void CollisionMap::draw(sf::RenderTarget &target, sf::RenderStates states) const {
-    auto& window = Renderer::instance().get_window();
+    auto& window = Renderer::get_window();
 
     // Only used for debugging, this does a lot of expensive operations
     std::ranges::for_each(m_collidableElements, [&](const sf::FloatRect& rect) {

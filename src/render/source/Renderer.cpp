@@ -1,12 +1,15 @@
 #include "Renderer.hpp"
 
-Renderer& Renderer::instance() { // Change from singleton to RAII when possible
-    static Renderer renderer;
-    return renderer;
+namespace {
+    sf::RenderWindow window;
 }
 
-Renderer::Renderer() {
-    m_window.create(sf::VideoMode({1920u, 1080u}), "Pixel Slash");
-    m_window.setFramerateLimit(60u);
-    m_window.setKeyRepeatEnabled(false);
+namespace Renderer {
+    void init() {
+        window.create(sf::VideoMode{{1920u, 1080u}}, "Pixel Slash");
+        window.setFramerateLimit(60u);
+        window.setKeyRepeatEnabled(false);
+    }
+
+    sf::RenderWindow& get_window() { return window; }
 }

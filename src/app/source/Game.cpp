@@ -10,7 +10,9 @@
 namespace Game {
 
 void begin() {
-    auto& window = Renderer::instance().get_window();
+    Renderer::init();
+
+    auto& window = Renderer::get_window();
     auto clock = sf::Clock();
 
     // Create all callbacks

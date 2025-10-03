@@ -4,7 +4,7 @@
 #include "Renderer.hpp"
 
 void Scene::render() {
-    auto& window = Renderer::instance().get_window();
+    auto& window = Renderer::get_window();
     window.clear();
 
     std::erase_if(m_gameObjects, [&](const std::weak_ptr<GameObject>& wptr) { return wptr.expired(); });

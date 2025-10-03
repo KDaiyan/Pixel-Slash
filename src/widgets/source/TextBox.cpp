@@ -9,7 +9,7 @@ void TextBox::construct_text() {
 }
 
 void TextBox::draw(sf::RenderTarget& target, sf::RenderStates states) const {
-    auto& window = Renderer::instance().get_window();
+    auto& window = Renderer::get_window();
     window.draw(*m_textObject);
 }
 

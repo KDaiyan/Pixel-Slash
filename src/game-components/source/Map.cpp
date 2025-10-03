@@ -18,6 +18,6 @@ sf::Sprite Map::get_sprite() const {
 }
 
 void Map::draw(sf::RenderTarget& target, sf::RenderStates states) const {
-    auto& window = Renderer::instance().get_window();
+    auto& window = Renderer::get_window();
     window.draw(*m_sprite);
 }
